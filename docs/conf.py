@@ -5,7 +5,14 @@ from __future__ import division, print_function, unicode_literals
 import os
 import sys
 
-import sphinx_rtd_theme
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 from recommonmark.parser import CommonMarkParser
 
 sys.path.insert(0, os.path.abspath('..'))
@@ -37,8 +44,8 @@ source_parsers = {
 }
 
 master_doc = 'index'
-project = u'Read the Docs'
-copyright = '2010-{}, Read the Docs, Inc & contributors'.format(
+project = u'BTK2.0'
+copyright = '2015-{}, Kenichi Kumatani, Rita Singh, Bhiksha Raj'.format(
     timezone.now().year
 )
 version = '2.7'
@@ -50,14 +57,14 @@ intersphinx_mapping = {
     'django': ('http://django.readthedocs.io/en/1.9.x/', None),
     'sphinx': ('http://sphinx.readthedocs.io/en/latest/', None),
 }
-htmlhelp_basename = 'ReadTheDocsdoc'
+htmlhelp_basename = 'btk_two_point_o'
 latex_documents = [
-    ('index', 'ReadTheDocs.tex', u'Read the Docs Documentation',
-     u'Eric Holscher, Charlie Leifer, Bobby Grace', 'manual'),
+    ('index', 'btk_two_point_o.tex', u'BTK2.0',
+     u'Kenichi Kumatani, Rita Singh, Bhiksha Raj', 'manual'),
 ]
 man_pages = [
-    ('index', 'read-the-docs', u'Read the Docs Documentation',
-     [u'Eric Holscher, Charlie Leifer, Bobby Grace'], 1)
+    ('index', 'btk_two_point_o_docs', u'BTK2.0',
+     [u'Kenichi Kumatani, Rita Singh, Bhiksha Raj'], 1)
 ]
 
 exclude_patterns = [
@@ -74,7 +81,7 @@ gettext_compact = False
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_logo = 'img/logo.svg'
+html_logo = 'img/logo.png'
 html_theme_options = {
     'logo_only': True,
     'display_version': False,

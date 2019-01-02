@@ -1,5 +1,5 @@
 """
-Read the Docs documentation extensions for Sphinx
+BTK2.0 documentation extensions for Sphinx
 
 Adds the following roles:
 

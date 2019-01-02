@@ -1,4 +1,4 @@
-Welcome to Read the Docs
+Welcome to Beamforming Toolkit 2.0 (btk 2.0)
 ========================
 
 |build-status| |docs| |coverage|
