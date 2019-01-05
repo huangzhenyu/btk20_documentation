@@ -1,3 +1,5 @@
+.. _sec-bp:
+
 Binaural Processing
 ===========================
 

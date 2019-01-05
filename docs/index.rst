@@ -3,17 +3,22 @@ BTK 2.0: Documentation
 
 `Beamforming toolkit`_ provides the C++ and Python libraries to develop real-time audio and speech signal processing techniques and contains the following modules:
 
-* **Speech feature extraction**,
 
-* **Speaker tracking**,
+* :ref:`Feature extraction <sec-sfe>`,
 
-* **Beamforming**,
+* :ref:`Subband processing <sec-sbp>`,
 
-* **Post-filtering**,
+* :ref:`Binaural processing <sec-bp>`,
 
-* **Dereverberation, and**
+* :ref:`Speaker tracking <sec-tde-st>`,
 
-* **Acoustic echo cancellation.**
+* :ref:`Beamforming <sec-bf>`,
+
+* :ref:`Post-filtering <sec-apf>`,
+
+* :ref:`Dereverberation <sec-dereverb>`, and
+
+* :ref:`Acoustic echo cancellation <sec-aec>`.
 
 The components of the toolkit are written in C++. Users can build an entire system in C++. In addition to the C++ program interface, the BTK provides the Python modules produced by SWIG.
 

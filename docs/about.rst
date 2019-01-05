@@ -10,6 +10,9 @@ The BTK was originally developved by `Dr. John McDonough`_. The project is curre
 Contributors
 ~~~~~~~~~~~~
 
-* **Kenichi Kumatani**
-* **Rita Singh**
-* **Bhiksha Raj**
+* Kenichi Kumatani
+* `Rita Singh`_
+* `Bhiksha Raj`_
+
+.. _Rita Singh: http://mlsp.cs.cmu.edu/people/rsingh/
+.. _Bhiksha Raj: http://mlsp.cs.cmu.edu/people/bhiksha/
