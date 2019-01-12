@@ -3,7 +3,7 @@
 Feature Extraction
 ===========================
 
-This page shows the usage of the BTK for speech feature extraction. The example scripts below will also help you understand how to use the stream feature pointer object and iterator. 
+This page shows the usage of the `BTK`_ for speech feature extraction. The example scripts below will also help you understand how to use the stream feature pointer object and iterator. 
 
 Log Power Feature
 --------------------------
@@ -17,22 +17,23 @@ The final output, the log power vector, is stored in *log_vector* at line 33 and
 .. literalinclude:: examples/log_power_extractor.py
     :language: python
     :linenos:
-    :caption: log_power_extractor.py
+    :caption: unit_test/log_power_extractor.py
     :name: log_power_extractor.py
 
 
 Mel-frequency cepstral coefficient (MFCC)
----------------
+--------------------------------------------------------
 
 In the same way as log power feature extraction, we can implement `MFCC`_ feature extraction. :numref:`mfcc_extractor.py` shows an example of MFCC computation. As it is clear in the code, we just need to insert more feature pointer objects to obtain the MFCC. 
 
 .. literalinclude:: examples/mfcc_extractor.py
     :language: python
     :linenos:
-    :caption: mfcc_extractor.py
+    :caption: unit_test/mfcc_extractor.py
     :name: mfcc_extractor.py
 
 Those scripts can be found in `btk20_src/unit_test`_ of the git repository.
 
+.. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm
 .. _btk20_src/unit_test: https://github.com/kkumatani/distant_speech_recognition/tree/master/btk20_src/unit_test
 .. _MFCC: https://en.wikipedia.org/wiki/Mel-frequency_cepstrum

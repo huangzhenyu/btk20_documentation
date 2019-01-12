@@ -1,5 +1,6 @@
+**********
 References
--------------
+**********
 
 .. # Use BIbTex alpha style
 
@@ -41,6 +42,8 @@ References
 
 .. [TA05] I. Tashev and D. Allred, "Reverberation reduction for improved speech recognition," in Proceedings of Hands-Free Communication and Microphone Arrays, Piscataway, USA, 2005. 
 
+.. [KDGH+16] K. Kinoshita and M. Delcroix and S. Gannot and E. Habets and R. Haeb-Umbach and W. Kellermann and V. Leutnant and R. Maas and T. Nakatani and B. Raj and A. Sehr and T. Yoshioka; "A summary of the REVERB challenge: state-of-the-art and remaining challenges in reverberant speech processing research" EURASIP Journal on Advances in Signal Processing, 2016
+
 .. [YN12] T. Yoshioka and T. Nakatani, "Generalization of multi-channel linear prediction methods for blind MIMO impulse response shortening," IEEE Trans. Audio, Speech, Language Process, p. 2707–2720, 2012. 
 
 .. [TAS09] I. Tashev, "Sound Capture and Processing: Practical Approaches", Wiley, 2009. 
@@ -51,9 +54,13 @@ References
  
 .. [MCKR+11] J. McDonough, W. Chu, K. Kumatani, B. Raj and J. Lehman, "An Information Filter for Voice Prompt Suppression," in Asilomar, Pacific Grove, CA , 2011. 
 
-.. [MKR11] J. McDonough, K. Kumatani and B. Raj, "On the Combination of Voice Prompt Suppression with Maximum Kurtosis Beamforming," in WASPAA, New Paltz, NY, 2011. 
+.. [MKR11] J. McDonough, K. Kumatani and B. Raj, "On the Combination of Voice Prompt Suppression with Maximum Kurtosis Beamforming," in Proc. WASPAA, New Paltz, NY, 2011.
 
-.. [EV06] G. Enzner and P. Vary, "Frequency-domain adaptive Kalman filter for acoustic echo control in hands-free telephones," Signal Processing, pp. 1140-1156, 2006. 
+.. [EV06] G. Enzner and P. Vary, "Frequency-domain adaptive Kalman filter for acoustic echo control in Proc.  hands-free telephones," Signal Processing, pp. 1140-1156, 2006.
+
+.. [FF18] Jan Franzen, Tim Fingscheidt, "An Efficient Residual Echo Suppression for Multi-Channel Acoustic Echo Cancellation Based on the Frequency-Domain Adaptive Kalman Filter", in Proc. ICASSP 2018.
+
+.. [CSVH18] Guillaume Carbajal, Romain Serizel, Emmanuel Vincent, Eric Humbert, "Multiple-input neural network-based residual echo suppression", in Proc. ICASSP 2018.
 
 .. [WM05] M. Wölfel and J. McDonough, "Minimum variance distortionless response spectral estimation, review and refinements," IEEE Signal Processing Magazine, pp. 117-126, 2005. 
 

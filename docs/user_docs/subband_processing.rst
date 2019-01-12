@@ -3,7 +3,7 @@
 Subband Processing
 ===========================
 
-Speech signal processing is typically performed in the frequency domain for the sake of computational efficiency. Subband processing is an elegant way of transforming a block of speech signal between the time and frequency domains. In applying subband processing to adaptive filtering, we will need to reduce the *aliasing distortion* effect caused by arbitrary magnitude scaling and phase shifting. This page explains how subband processing can be implemented in the BTK. 
+Speech signal processing is typically performed in the frequency domain for the sake of computational efficiency [HAY02]_. Subband processing is an elegant way of transforming a block of speech signal between the time and frequency domains [HAY02]_ [VAD92]_. In applying subband processing to adaptive filtering, we will need to reduce the *aliasing distortion* effect caused by arbitrary magnitude scaling and phase shifting [KMSK+08]_ [DGCN03]_. This page explains how subband processing can be implemented in the `BTK`_.
 
 Oversampled DFT-modulated Filter
 --------------------------------
@@ -26,9 +26,9 @@ This can be viewed as a more general form of traditional short-term FFT analysis
 
 
 Nyquist(M) Filter Design
-~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Nyquist(M) filter is proven to lead to good performance in adaptive processing. We first need to generate analysis and synthesis filter coefficients by running the python script in `tools/filterbank`_ as follows.
+The Nyquist(M) filter is proven to lead to good performance in adaptive processing [KMSK+08]_. We first need to generate analysis and synthesis filter coefficients by running `tools/filterbank/design_nyquist_filter.py`_ in the Git repository as follows.
 
 .. sourcecode:: bash
 
@@ -46,6 +46,7 @@ Here, *M*, *r* and *m* are the number of subbands, exponential decimation factor
 By default, that command will dump files into a "prototype.ny" directory. 
 
 .. sourcecode:: bash
+
     $ ls prototype.ny
     M=128-m=4-r=1.m    g-M128-m4-r1.pickle	   h-M128-m4-r1.pickle
 
@@ -75,12 +76,13 @@ The RMSE in the stdout indicates that the reconstruction error is negligible.
     :name: test_oversampled_dft_filter.py
 
 .. _tools/filterbank: https://github.com/kkumatani/distant_speech_recognition/tree/master/btk20_src/tools/filterbank
+.. _tools/filterbank/design_nyquist_filter.py: https://github.com/kkumatani/distant_speech_recognition/tree/master/btk20_src/tools/filterbank/design_nyquist_filter.py
 .. _tools/filterbank/test_oversampled_dft_filter.py: https://github.com/kkumatani/distant_speech_recognition/tree/master/btk20_src/tools/filterbank/test_oversampled_dft_filter.py
 
 de Haan Filter Design 
-~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
-The BTK provides another oversampled DFT-modulated filter technique proposed by Jan Mark de Haan.  Although de Haan's method has a higher reconstruction error than the Nyquist(M) filter bank, it may be interesting to try it. 
+The `BTK`_ provides another oversampled DFT-modulated filter technique proposed by Jan Mark de Haan [DGCN03]_.  Although de Haan's method has a higher reconstruction error than the Nyquist(M) filter bank, it may be interesting to try it.
 
 The de Haan's filter prototypes can be generated as:
 
@@ -121,3 +123,6 @@ Consine-modulated Perfect Reconstruction Filter
 
 Overlap-Add/Save Method
 -----------------------
+
+
+.. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm

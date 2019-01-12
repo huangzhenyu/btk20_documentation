@@ -1,5 +1,6 @@
+*************
 About BTK 2.0
--------------
+*************
 
 The BTK was originally developved by `Dr. John McDonough`_. The project is currently owned by `MLSP, Carnegie Mellon University`_.
 
@@ -8,7 +9,9 @@ The BTK was originally developved by `Dr. John McDonough`_. The project is curre
 
 
 Contributors
-~~~~~~~~~~~~
+------------
+
+We are looking for more contributors!
 
 * Kenichi Kumatani
 * `Rita Singh`_

@@ -2,7 +2,7 @@ Installing BTK2.0
 ===========================
 
 Downloading BTK2.0
-------------------
+-----------------------------
 
 The latest BTK is available on `github's BTK project`_.
 
@@ -10,14 +10,16 @@ You can download the BTK 2.0 source archive from
 
 ``https://github.com/kkumatani/distant_speech_recognition/archive/master.zip``
 
-or clone it with Git:
+or clone it with `Git`_:
 
 .. sourcecode:: bash
 
     $ git clone https://github.com/kkumatani/distant_speech_recognition.git
 
+.. _Git: https://git-scm.com/
+
 Building BTK2.0
----------------
+----------------------
 Assuming you download the BTK 2.0 in
 ${your_btk_git_repository_directory}, you will just need to build it
 with `CMake`_.
@@ -30,7 +32,7 @@ with `CMake`_.
     $ cmake -DCMAKE_INSTALL_PREFIX=$HOME/local .. && make install
 
 Importing BTK2.0
-----------------
+------------------------
 
 .. sourcecode:: bash
 

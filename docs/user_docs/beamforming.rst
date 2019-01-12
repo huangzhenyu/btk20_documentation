@@ -4,13 +4,13 @@ Beamforming
 ===========================
 
 Delay-and-sum (D&S) Beamforming
---------------------------
+--------------------------------
 
 Super-Directive Beamforming
---------------------------
+----------------------------
 
 MVDR Beamforming
-----------------
+-----------------
 
 Recursive Implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,10 +25,10 @@ Maximum Super-Gaussianity Beamforming
 -------------------------------------
 
 Maximum Kurtosis Beamforming
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Maximum Negentropy Beamforming
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Spherical Beamforming
 -----------------------------------

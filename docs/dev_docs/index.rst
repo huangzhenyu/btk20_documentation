@@ -1,5 +1,6 @@
+****************
 Developer Guides
----------------------------------
+****************
 
 .. note:: This page describes the manual for developers, `distantspeechrecognition.sourceforge.net`_.
 

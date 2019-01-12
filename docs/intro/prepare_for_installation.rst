@@ -1,5 +1,5 @@
 Prerequisites for Installation
-============================
+=================================
 
 
 Dependencies
@@ -45,7 +45,7 @@ The following software package are optional.
 .. _ATLAS: http://math-atlas.sourceforge.net/
 
 Installing on OS X
-------------------
+-------------------------
 
 Installing packages with Homebrew
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +56,7 @@ We'd recommend using `Homebrew`_ for making package installation easy.  To insta
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Once it is installed successfully, intall the packages necessary for BTK2.0 as follows. 
+Once it is installed successfully, install the packages necessary for BTK2.0 as follows. 
 
 .. sourcecode:: bash
 
@@ -69,8 +69,30 @@ Once it is installed successfully, intall the packages necessary for BTK2.0 as f
 
 Now, you are ready to install BTK2.0. 
 
-Installing on Linux
--------------------
-
-
 .. _Homebrew: https://brew.sh/index
+
+Installing on Linux
+-------------------------
+
+Using apt on Ubuntu
+~~~~~~~~~~~~~~~~~~~
+
+It is straightforward to install packages with `apt`_ on Ubuntu. For example, run the following commands on the terminal. 
+
+.. sourcecode:: bash
+
+	$ sudo apt install camke
+	$ sudo apt install swig
+	$ sudo apt install python
+	$ sudo apt install python-dev
+	$ sudo apt install python-numpy
+	$ sudo apt install python-numpy-dev
+	$ sudo apt install libgslcblas0 libgsl23 gsl-bin
+	$ sudo apt install libgsl-dev
+	$ sudo apt install libsndfile1
+	$ sudo apt install libsndfile1-dev
+	$ sudo apt install sndfile-programs
+
+This should be enough to build the BTK2.0. Note that some package names could be slightly different on each Ubuntu version. 
+
+.. _apt: https://help.ubuntu.com/lts/serverguide/apt.html.en
