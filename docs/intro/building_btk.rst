@@ -4,9 +4,9 @@ Installing BTK2.0
 Downloading BTK2.0
 -----------------------------
 
-The latest BTK is available on `github's BTK project`_.
+The latest `BTK`_ is available on `github's BTK project`_.
 
-You can download the BTK 2.0 source archive from
+You can download the `BTK2.0`_ source archive from
 
 ``https://github.com/kkumatani/distant_speech_recognition/archive/master.zip``
 
@@ -20,7 +20,7 @@ or clone it with `Git`_:
 
 Building BTK2.0
 ----------------------
-Assuming you download the BTK 2.0 in
+Assuming you download the `BTK2.0`_ in
 ${your_btk_git_repository_directory}, you will just need to build it
 with `CMake`_.
 
@@ -44,7 +44,7 @@ Importing BTK2.0
        to export PYTHONPATH accordingly.
 
 
-If everything goes well, you should be able to import the BTK20 module on the Python terminal as follows. 
+If everything goes well, you should be able to import the `BTK2.0`_ module on the Python terminal as follows. 
 
 .. sourcecode:: bash
 
@@ -54,5 +54,8 @@ If everything goes well, you should be able to import the BTK20 module on the Py
      Type "help", "copyright", "credits" or "license" for more information.
     >>> import btk20
 
-.. _github's BTK project: https://github.com/kkumatani/distant_speech_recognition
 .. _CMake: https://cmake.org/
+.. _github's BTK project: https://github.com/kkumatani/distant_speech_recognition
+.. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm
+.. _BTK2.0: https://github.com/kkumatani/distant_speech_recognition
+

@@ -13,3 +13,5 @@ SRP-PHAT Source Localization
 
 Direct Kalman Filtering Speaker Tracking
 ----------------------------------------
+
+[KGM06]_

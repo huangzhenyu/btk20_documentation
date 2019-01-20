@@ -5,7 +5,7 @@ Prerequisites for Installation
 Dependencies
 -------------------------
 
-To build the BTK, we need to install the following software packages:
+To build the `BTK`_, we need to install the following software packages:
 
 * `CMake`_: Cross-platform family of tools designed to build, test and package software
 
@@ -56,7 +56,7 @@ We'd recommend using `Homebrew`_ for making package installation easy.  To insta
 
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-Once it is installed successfully, install the packages necessary for BTK2.0 as follows. 
+Once it is installed successfully, install the packages necessary for `BTK2.0`_ as follows. 
 
 .. sourcecode:: bash
 
@@ -67,7 +67,7 @@ Once it is installed successfully, install the packages necessary for BTK2.0 as 
     $ brew install gsl
     $ brew install libsndfile
 
-Now, you are ready to install BTK2.0. 
+Now, you are ready to install `BTK2.0`_. 
 
 .. _Homebrew: https://brew.sh/index
 
@@ -93,6 +93,9 @@ It is straightforward to install packages with `apt`_ on Ubuntu. For example, ru
 	$ sudo apt install libsndfile1-dev
 	$ sudo apt install sndfile-programs
 
-This should be enough to build the BTK2.0. Note that some package names could be slightly different on each Ubuntu version. 
+This should be enough to build the `BTK2.0`_. Note that some package names could be slightly different on each Ubuntu version. 
 
 .. _apt: https://help.ubuntu.com/lts/serverguide/apt.html.en
+.. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm
+.. _BTK2.0: https://github.com/kkumatani/distant_speech_recognition
+

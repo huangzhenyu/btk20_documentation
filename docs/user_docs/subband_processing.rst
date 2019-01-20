@@ -3,12 +3,12 @@
 Subband Processing
 ===========================
 
-Speech signal processing is typically performed in the frequency domain for the sake of computational efficiency [HAY02]_. Subband processing is an elegant way of transforming a block of speech signal between the time and frequency domains [HAY02]_ [VAD92]_. In applying subband processing to adaptive filtering, we will need to reduce the *aliasing distortion* effect caused by arbitrary magnitude scaling and phase shifting [KMSK+08]_ [DGCN03]_. This page explains how subband processing can be implemented in the `BTK`_.
+Speech signal processing is typically performed in the frequency domain for the sake of computational efficiency [HAY02]_. Subband processing is an elegant way of transforming a block of speech signal between the time and subband frequency domains [HAY02]_ [VAD92]_. The *perfect reconstruction* can be also achieved through the *aliasing  cancellation* in subband processing. However, adaptive filtering systems would destroy perfect reconstruction property by scaling the magnitude of a subband and shifting the phase. Therefore, perfect reconstruction filter bank systems are not suitable for adaptive processing. We will instead need to reduce the aliasing distortion effect caused by arbitrary magnitude scaling and phase shifting [KMSK+08]_ [DGCN03]_. This page explains how subband processing can be implemented with the `BTK`_.
 
 Oversampled DFT-modulated Filter
 --------------------------------
 
-This can be viewed as a more general form of traditional short-term FFT analysis method. A typical oversampled DFT-modulated filter bank will have the following parameters:
+Subband processing with the oversampled DFT-modulated filter bank can be viewed as a more general form of traditional short-term FFT analysis method. A typical oversampled DFT-modulated filter bank will have the following parameters:
 
 * Number of subbands, *M*, to control the frequency resolution
 
@@ -16,7 +16,7 @@ This can be viewed as a more general form of traditional short-term FFT analysis
 
 * Filter length factor, *m*, to determine the length of the filter prototype. 
 
- :numref:`sb-odftmfb` illustrates a block chart of the oversampled DFT-modulated filter bank. As shown in :numref:`sb-odftmfb`,  the time-discrete signal is first transformed into the subband frequency domain through the analysis filter bank. The subband component is then transformed back into the time domain through the synthesis filter bank. Analysis and synthesis filter bank processing can be done by using the *OverSampledDFTAnalysisBankPtr* and *OverSampledDFTSynthesisBankPtr* feature pointer objects respectively.
+ :numref:`sb-odftmfb` illustrates a block chart of the oversampled DFT-modulated filter bank. As shown in :numref:`sb-odftmfb`,  the time-discrete signal is first transformed into the subband frequency domain through the analysis filter bank and decimator. After up-sampling, the subband component is then transformed back into the time domain through the synthesis filter bank. Analysis and synthesis filter bank processing can be done by using the *OverSampledDFTAnalysisBankPtr* and *OverSampledDFTSynthesisBankPtr* feature pointer objects respectively.
 
 .. figure::  figs/analysis-synthesis.png
    :name: sb-odftmfb
@@ -118,8 +118,9 @@ You can test the de Haan's filter in the same way as the Nyquist(M) filter as
    Amplification ratio: 1.006513834
    
 
-Consine-modulated Perfect Reconstruction Filter
+Cosine-modulated Perfect Reconstruction Filter
 -----------------------------------------------
+
 
 Overlap-Add/Save Method
 -----------------------

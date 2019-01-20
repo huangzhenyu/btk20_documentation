@@ -20,11 +20,11 @@ BTK 2.0: Documentation
 
 * :ref:`Acoustic echo cancellation <sec-aec>`.
 
-The components of the toolkit are written in C++. Users can build an entire system in C++. In addition to the C++ program interface, the BTK provides the Python modules produced by SWIG.
+The components of the toolkit are written in C++. Users can build an entire system in C++. In addition to the C++ program interface, the `BTK`_ provides the Python modules produced by SWIG.
 
-.. _Beamforming toolkit: http://distantspeechrecognition.sourceforge.net/manual.htm
+.. _Beamforming toolkit: https://distantspeechrecognition.sourceforge.io/index.htm
 
-
+.. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm
 
 .. _installation-docs:
 

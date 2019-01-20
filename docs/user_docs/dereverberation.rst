@@ -3,7 +3,7 @@
 Dereverberation
 ===============
 
-Several papers reported that reverberation effects would degrade far-field speech recognition accuracy [KDGH+16]_ [YN12]_. Dereverberation can be achieved through super-Gaussian beamforming [KMB12]_ or weighted prediction error (WPE) algorithm [YN12]_. The `BTK`_ implements the single channel and multi-channel WPE algorithm in the subband domain.
+Several papers reported that reverberation effects would degrade far-field speech recognition accuracy [TA05]_ [KDGH+16]_ [YN12]_. Dereverberation can be achieved through super-Gaussian beamforming [KMB12]_ or weighted prediction error (WPE) algorithm [YN12]_. The `BTK`_ implements the single channel and multi-channel WPE algorithm in the subband domain.
 
 It is worth noting that there is another pure Python implementation of the WPE algorithm, `Nara WPE`_.  The main differences between `Nara WPE`_ and `BTK2.0`_ are:
 
@@ -106,7 +106,7 @@ The multi-channel WPE dereverberator  will consist of
 
 * Multiple *OverSampledDFTSynthesisBankPtr()* instances.
 
-In order to generate multiple output, the chain of the iterators are called for each channel at line 73. 
+In order to generate multiple output, the script calls the chain of the iterators for each channel at line 173.
 
 .. literalinclude:: examples/test_subband_dereverberator.py
     :language: python
