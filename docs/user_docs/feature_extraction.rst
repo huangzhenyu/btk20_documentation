@@ -21,7 +21,7 @@ The final output, the log power vector, is stored in *log_vector* at line 33 and
     :name: log_power_extractor.py
 
 
-Mel-frequency cepstral coefficient (MFCC)
+Mel-Frequency Cepstral Coefficient (MFCC)
 --------------------------------------------------------
 
 In the same way as log power feature extraction, we can implement `MFCC`_ feature extraction. :numref:`mfcc_extractor.py` shows an example of MFCC computation. As it is clear in the code, we just need to insert more feature pointer objects to obtain the MFCC. 
@@ -31,6 +31,10 @@ In the same way as log power feature extraction, we can implement `MFCC`_ featur
     :linenos:
     :caption: unit_test/mfcc_extractor.py
     :name: mfcc_extractor.py
+
+Minimum Variance Distortionless Response (MVDR) Feature
+-----------------------------------------------------------------------------------------------------
+[WM05]_ [VSR13]_
 
 Those scripts can be found in `btk20_src/unit_test`_ of the git repository.
 

@@ -1,8 +1,7 @@
 BTK 2.0: Documentation
 =======================================
 
-`Beamforming toolkit`_ provides the C++ and Python libraries to develop real-time audio and speech signal processing techniques and contains the following modules:
-
+`Beamforming toolkit`_ provides the C++ and Python libraries for
 
 * :ref:`Feature extraction <sec-sfe>`,
 
@@ -20,7 +19,7 @@ BTK 2.0: Documentation
 
 * :ref:`Acoustic echo cancellation <sec-aec>`.
 
-The components of the toolkit are written in C++. Users can build an entire system in C++. In addition to the C++ program interface, the `BTK`_ provides the Python modules produced by SWIG.
+The components of the toolkit are written in C++. Users can build an entire system in C++. In addition to the C++ program interface, the `BTK`_ provides Python modules. The BTK is suitable for developing real-time audio and speech signal processing applications. 
 
 .. _Beamforming toolkit: https://distantspeechrecognition.sourceforge.io/index.htm
 
@@ -37,7 +36,7 @@ The components of the toolkit are written in C++. Users can build an entire syst
 .. _user-docs:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Docs
 
    user_docs/index
@@ -51,5 +50,3 @@ The components of the toolkit are written in C++. Users can build an entire syst
 
    about
    references.rst
-
-

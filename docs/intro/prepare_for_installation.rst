@@ -11,7 +11,7 @@ To build the `BTK`_, we need to install the following software packages:
 
 * `SWIG`_: Simplified wrapper and interface generator
 
-* `Python Dev.`_: Python development with header and objects
+* `Python Dev.`_: Python development with headers and objects
 
 * `NumPy Dev.`_: Matlab like extension to python
 

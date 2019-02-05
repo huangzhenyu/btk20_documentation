@@ -36,6 +36,7 @@ extensions = [
     'djangodocs',
     'doc_extensions',
     'sphinx_tabs.tabs',
+#    'sphinxcontrib.googleanalytics',
 ]
 templates_path = ['_templates']
 

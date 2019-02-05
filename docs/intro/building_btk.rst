@@ -20,8 +20,8 @@ or clone it with `Git`_:
 
 Building BTK2.0
 ----------------------
-Assuming you download the `BTK2.0`_ in
-${your_btk_git_repository_directory}, you will just need to build it
+Assuming that you download the `BTK2.0`_ in
+${your_btk_git_repository_directory}, you will need to build it
 with `CMake`_.
 
 .. sourcecode:: bash

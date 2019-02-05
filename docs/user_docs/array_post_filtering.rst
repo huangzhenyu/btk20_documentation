@@ -45,7 +45,7 @@ McCowan post-filtering can provide a more optimum solution for the diffuse noise
 Lefkimmiatis Post-Filtering
 ----------------------------
 
-According to [LM07]_, McCowan's method is sub-optimum in the diffuse noise field. You can try out Lefkimmiatis post-filtering as the following command. 
+According to [LM07]_, McCowan's method is sub-optimum in the diffuse noise field. You can try out Lefkimmiatis post-filtering as follows. 
 
 .. sourcecode:: bash
 
@@ -58,7 +58,7 @@ According to [LM07]_, McCowan's method is sub-optimum in the diffuse noise field
             data/CMU/R1/M1005/KINECT/RAW/segmented/U1001_1M_16k_b16_c4.wav \
          -o out/U1001_1M_sdl.wav
 
-.. tip:: The effect of post-filtering in ASR is reported in [SKMC12]_.  Those post-filters may not be effective under a mismatched noise field assumption. 
+.. tip:: As reported in [SKMC12]_, those post-filters may not be effective under a mismatched noise field assumption. 
 
 .. _BTK: https://distantspeechrecognition.sourceforge.io/index.htm
 .. _unit_test/test_online_beamforming: https://github.com/kkumatani/distant_speech_recognition/blob/master/btk20_src/unit_test/test_online_beamforming.py
